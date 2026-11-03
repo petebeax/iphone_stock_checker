@@ -1,0 +1,18 @@
+GITHUB CLOUD MONITOR
+iPhone Watchlist
+Add phones, choose valid Apple configurations, and route each restock email to its own recipient.
+
+1. Unlock your watchlist
+Your list is encrypted before being committed to your public repository. Your passphrase and GitHub token are kept in this browser tab only and are never saved by this page.
+
+Encryption passphrase
+Same value as WATCHLIST_PASSPHRASE
+ GitHub fine-grained token
+Contents: Read and write permission
+Load existing alertsStart new watchlist
+How it works
+After you save, the next cron-triggered GitHub Actions run reads secure_watchlist.json and uses your encrypted alerts. Existing WATCHLIST_JSON is a fallback only until the first encrypted save. Your email SMTP settings and cron job stay unchanged.
+
+This page is publicly viewable, but editing requires your GitHub token, and reading saved alerts requires your passphrase. It is not a separate login service. Do not share either credential.
+
+Made for GitHub Pages · Apple stock availability is not a reservation.
