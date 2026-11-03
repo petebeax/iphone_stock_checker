@@ -1,0 +1,242 @@
+[
+  {
+    "part": "MJRF4VC/A",
+    "model": "iPhone 18 Pro",
+    "storage": "1TB",
+    "color": "Black"
+  },
+  {
+    "part": "MJRH4VC/A",
+    "model": "iPhone 18 Pro",
+    "storage": "1TB",
+    "color": "Burgundy"
+  },
+  {
+    "part": "MJRJ4VC/A",
+    "model": "iPhone 18 Pro",
+    "storage": "1TB",
+    "color": "Glacier"
+  },
+  {
+    "part": "MJRG4VC/A",
+    "model": "iPhone 18 Pro",
+    "storage": "1TB",
+    "color": "Silver"
+  },
+  {
+    "part": "MJR54VC/A",
+    "model": "iPhone 18 Pro",
+    "storage": "256GB",
+    "color": "Black"
+  },
+  {
+    "part": "MJR74VC/A",
+    "model": "iPhone 18 Pro",
+    "storage": "256GB",
+    "color": "Burgundy"
+  },
+  {
+    "part": "MJR84VC/A",
+    "model": "iPhone 18 Pro",
+    "storage": "256GB",
+    "color": "Glacier"
+  },
+  {
+    "part": "MJR64VC/A",
+    "model": "iPhone 18 Pro",
+    "storage": "256GB",
+    "color": "Silver"
+  },
+  {
+    "part": "MJRK4VC/A",
+    "model": "iPhone 18 Pro",
+    "storage": "2TB",
+    "color": "Black"
+  },
+  {
+    "part": "MJRM4VC/A",
+    "model": "iPhone 18 Pro",
+    "storage": "2TB",
+    "color": "Burgundy"
+  },
+  {
+    "part": "MJRN4VC/A",
+    "model": "iPhone 18 Pro",
+    "storage": "2TB",
+    "color": "Glacier"
+  },
+  {
+    "part": "MJRL4VC/A",
+    "model": "iPhone 18 Pro",
+    "storage": "2TB",
+    "color": "Silver"
+  },
+  {
+    "part": "MJR94VC/A",
+    "model": "iPhone 18 Pro",
+    "storage": "512GB",
+    "color": "Black"
+  },
+  {
+    "part": "MJRD4VC/A",
+    "model": "iPhone 18 Pro",
+    "storage": "512GB",
+    "color": "Burgundy"
+  },
+  {
+    "part": "MJRE4VC/A",
+    "model": "iPhone 18 Pro",
+    "storage": "512GB",
+    "color": "Glacier"
+  },
+  {
+    "part": "MJRC4VC/A",
+    "model": "iPhone 18 Pro",
+    "storage": "512GB",
+    "color": "Silver"
+  },
+  {
+    "part": "MJXE4VC/A",
+    "model": "iPhone 18 Pro Max",
+    "storage": "1TB",
+    "color": "Black"
+  },
+  {
+    "part": "MJXG4VC/A",
+    "model": "iPhone 18 Pro Max",
+    "storage": "1TB",
+    "color": "Burgundy"
+  },
+  {
+    "part": "MJXH4VC/A",
+    "model": "iPhone 18 Pro Max",
+    "storage": "1TB",
+    "color": "Glacier"
+  },
+  {
+    "part": "MJXF4VC/A",
+    "model": "iPhone 18 Pro Max",
+    "storage": "1TB",
+    "color": "Silver"
+  },
+  {
+    "part": "MJX54VC/A",
+    "model": "iPhone 18 Pro Max",
+    "storage": "256GB",
+    "color": "Black"
+  },
+  {
+    "part": "MJX74VC/A",
+    "model": "iPhone 18 Pro Max",
+    "storage": "256GB",
+    "color": "Burgundy"
+  },
+  {
+    "part": "MJX84VC/A",
+    "model": "iPhone 18 Pro Max",
+    "storage": "256GB",
+    "color": "Glacier"
+  },
+  {
+    "part": "MJX64VC/A",
+    "model": "iPhone 18 Pro Max",
+    "storage": "256GB",
+    "color": "Silver"
+  },
+  {
+    "part": "MJXJ4VC/A",
+    "model": "iPhone 18 Pro Max",
+    "storage": "2TB",
+    "color": "Black"
+  },
+  {
+    "part": "MJXL4VC/A",
+    "model": "iPhone 18 Pro Max",
+    "storage": "2TB",
+    "color": "Burgundy"
+  },
+  {
+    "part": "MJXM4VC/A",
+    "model": "iPhone 18 Pro Max",
+    "storage": "2TB",
+    "color": "Glacier"
+  },
+  {
+    "part": "MJXK4VC/A",
+    "model": "iPhone 18 Pro Max",
+    "storage": "2TB",
+    "color": "Silver"
+  },
+  {
+    "part": "MJX94VC/A",
+    "model": "iPhone 18 Pro Max",
+    "storage": "512GB",
+    "color": "Black"
+  },
+  {
+    "part": "MJXC4VC/A",
+    "model": "iPhone 18 Pro Max",
+    "storage": "512GB",
+    "color": "Burgundy"
+  },
+  {
+    "part": "MJXD4VC/A",
+    "model": "iPhone 18 Pro Max",
+    "storage": "512GB",
+    "color": "Glacier"
+  },
+  {
+    "part": "MJXA4VC/A",
+    "model": "iPhone 18 Pro Max",
+    "storage": "512GB",
+    "color": "Silver"
+  },
+  {
+    "part": "MK294VC/A",
+    "model": "iPhone Duo",
+    "storage": "1TB",
+    "color": "Night Sky"
+  },
+  {
+    "part": "MK284VC/A",
+    "model": "iPhone Duo",
+    "storage": "1TB",
+    "color": "Star White"
+  },
+  {
+    "part": "MK254VC/A",
+    "model": "iPhone Duo",
+    "storage": "256GB",
+    "color": "Night Sky"
+  },
+  {
+    "part": "MK244VC/A",
+    "model": "iPhone Duo",
+    "storage": "256GB",
+    "color": "Star White"
+  },
+  {
+    "part": "MK2C4VC/A",
+    "model": "iPhone Duo",
+    "storage": "2TB",
+    "color": "Night Sky"
+  },
+  {
+    "part": "MK2A4VC/A",
+    "model": "iPhone Duo",
+    "storage": "2TB",
+    "color": "Star White"
+  },
+  {
+    "part": "MK274VC/A",
+    "model": "iPhone Duo",
+    "storage": "512GB",
+    "color": "Night Sky"
+  },
+  {
+    "part": "MK264VC/A",
+    "model": "iPhone Duo",
+    "storage": "512GB",
+    "color": "Star White"
+  }
+]
