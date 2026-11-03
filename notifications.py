@@ -35,7 +35,7 @@ def configured_channels() -> dict[str, bool]:
     }
 
 
-def send_email(recipient: str, subject: str, body: str) -> None:
+def send_email(recipient: str, subject: str, body: str, *, html_body: str | None = None) -> None:
     if not email_valid(recipient):
         raise ValueError("Enter a valid notification email address")
     if not configured_channels()["email"]:
@@ -49,6 +49,8 @@ def send_email(recipient: str, subject: str, body: str) -> None:
     message["To"] = recipient
     message["Subject"] = subject
     message.set_content(body)
+    if html_body is not None:
+        message.add_alternative(html_body, subtype="html")
     if port == 465:
         with smtplib.SMTP_SSL(host, port, timeout=20, context=ssl.create_default_context()) as smtp:
             smtp.login(user, os.environ["SMTP_PASSWORD"])
