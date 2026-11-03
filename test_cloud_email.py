@@ -5,6 +5,7 @@ import json
 import os
 
 from notifications import email_valid, send_email
+from secure_watchlist import load_cloud_watchlist
 
 
 def recipient_from_watchlist(raw: str) -> str:
@@ -22,7 +23,7 @@ def recipient_from_watchlist(raw: str) -> str:
 
 
 def main() -> None:
-    recipient = recipient_from_watchlist(os.getenv("WATCHLIST_JSON", ""))
+    recipient = recipient_from_watchlist(json.dumps(load_cloud_watchlist()))
     send_email(
         recipient,
         "iPhone Stock Checker — GitHub test email",
