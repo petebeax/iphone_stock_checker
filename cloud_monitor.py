@@ -15,6 +15,7 @@ from uuid import uuid5, NAMESPACE_URL
 from monitor import main as monitor_main
 from stock_core import family_for_model, get_catalog
 from watchlist import DATA_DIR, WATCHLIST_PATH
+from secure_watchlist import load_cloud_watchlist
 
 ROOT = Path(__file__).resolve().parent
 STATE_PATH = ROOT / 'cloud_state.json'
@@ -22,8 +23,8 @@ BACKOFF = DATA_DIR / 'apple_backoff_until.txt'
 
 
 def prepare_watches(config: list[dict], *, catalog_loader=get_catalog) -> list[dict]:
-    if not isinstance(config, list) or not config:
-        raise ValueError('WATCHLIST_JSON must be a nonempty JSON array')
+    if not isinstance(config, list):
+        raise ValueError('Watchlist must be a JSON array')
     catalog = None
     watches = []
     for index, entry in enumerate(config, 1):
@@ -72,10 +73,7 @@ def prepare_watches(config: list[dict], *, catalog_loader=get_catalog) -> list[d
 
 
 def run() -> int:
-    raw = os.environ.get('WATCHLIST_JSON', '').strip()
-    if not raw:
-        raise RuntimeError('Missing WATCHLIST_JSON GitHub Actions secret')
-    watches = prepare_watches(json.loads(raw))
+    watches = prepare_watches(load_cloud_watchlist())
     state = json.loads(STATE_PATH.read_text(encoding='utf-8')) if STATE_PATH.exists() else {}
     if not isinstance(state, dict):
         raise ValueError('cloud_state.json must be an object')
