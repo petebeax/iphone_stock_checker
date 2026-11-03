@@ -10,6 +10,7 @@ on:
         options:
           - check_stock
           - test_email
+          - test_all_emails
 permissions:
   contents: write
 concurrency:
@@ -29,10 +30,10 @@ jobs:
       - name: Install monitor dependencies
         run: python -m pip install 'requests>=2.32,<3' 'python-dotenv>=1.0,<2' 'cryptography>=43,<48'
       - name: Refresh public product catalogue
-        if: ${{ github.event_name == 'schedule' || inputs.run_mode != 'test_email' }}
+        if: ${{ github.event_name == 'schedule' || inputs.run_mode == 'check_stock' }}
         run: python export_catalog.py
       - name: Check and notify
-        if: ${{ github.event_name == 'schedule' || inputs.run_mode != 'test_email' }}
+        if: ${{ github.event_name == 'schedule' || inputs.run_mode == 'check_stock' }}
         env:
           WATCHLIST_JSON: ${{ secrets.WATCHLIST_JSON }}
           WATCHLIST_PASSPHRASE: ${{ secrets.WATCHLIST_PASSPHRASE }}
@@ -43,7 +44,7 @@ jobs:
           EMAIL_FROM: ${{ secrets.SMTP_USER }}
         run: python cloud_monitor.py
       - name: Send test email
-        if: ${{ github.event_name == 'workflow_dispatch' && inputs.run_mode == 'test_email' }}
+        if: ${{ github.event_name == 'workflow_dispatch' && (inputs.run_mode == 'test_email' || inputs.run_mode == 'test_all_emails') }}
         env:
           WATCHLIST_JSON: ${{ secrets.WATCHLIST_JSON }}
           WATCHLIST_PASSPHRASE: ${{ secrets.WATCHLIST_PASSPHRASE }}
@@ -52,9 +53,14 @@ jobs:
           SMTP_USER: ${{ secrets.SMTP_USER }}
           SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
           EMAIL_FROM: ${{ secrets.SMTP_USER }}
-        run: python test_cloud_email.py
+        run: |
+          if [ "${{ inputs.run_mode }}" = "test_all_emails" ]; then
+            python test_cloud_email.py --all
+          else
+            python test_cloud_email.py
+          fi
       - name: Persist deduplication state and product catalog
-        if: ${{ github.event_name == 'schedule' || inputs.run_mode != 'test_email' }}
+        if: ${{ github.event_name == 'schedule' || inputs.run_mode == 'check_stock' }}
         run: |
           git add cloud_state.json catalog.json
           if ! git diff --cached --quiet; then
