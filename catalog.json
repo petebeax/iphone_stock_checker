@@ -12,16 +12,46 @@
     "color": "Burgundy"
   },
   {
+    "part": "MJRJ4VC/A",
+    "model": "iPhone 18 Pro",
+    "storage": "1TB",
+    "color": "Glacier"
+  },
+  {
+    "part": "MJRG4VC/A",
+    "model": "iPhone 18 Pro",
+    "storage": "1TB",
+    "color": "Silver"
+  },
+  {
+    "part": "MJR54VC/A",
+    "model": "iPhone 18 Pro",
+    "storage": "256GB",
+    "color": "Black"
+  },
+  {
     "part": "MJR74VC/A",
     "model": "iPhone 18 Pro",
     "storage": "256GB",
     "color": "Burgundy"
   },
   {
+    "part": "MJR84VC/A",
+    "model": "iPhone 18 Pro",
+    "storage": "256GB",
+    "color": "Glacier"
+  },
+  {
     "part": "MJR64VC/A",
     "model": "iPhone 18 Pro",
     "storage": "256GB",
     "color": "Silver"
+  },
+  {
+    "part": "MJRK4VC/A",
+    "model": "iPhone 18 Pro",
+    "storage": "2TB",
+    "color": "Black"
   },
   {
     "part": "MJRM4VC/A",
@@ -34,6 +64,12 @@
     "model": "iPhone 18 Pro",
     "storage": "2TB",
     "color": "Glacier"
+  },
+  {
+    "part": "MJRL4VC/A",
+    "model": "iPhone 18 Pro",
+    "storage": "2TB",
+    "color": "Silver"
   },
   {
     "part": "MJR94VC/A",
@@ -66,6 +102,12 @@
     "color": "Black"
   },
   {
+    "part": "MJXG4VC/A",
+    "model": "iPhone 18 Pro Max",
+    "storage": "1TB",
+    "color": "Burgundy"
+  },
+  {
     "part": "MJXH4VC/A",
     "model": "iPhone 18 Pro Max",
     "storage": "1TB",
@@ -78,10 +120,28 @@
     "color": "Silver"
   },
   {
+    "part": "MJX54VC/A",
+    "model": "iPhone 18 Pro Max",
+    "storage": "256GB",
+    "color": "Black"
+  },
+  {
     "part": "MJX74VC/A",
     "model": "iPhone 18 Pro Max",
     "storage": "256GB",
     "color": "Burgundy"
+  },
+  {
+    "part": "MJX84VC/A",
+    "model": "iPhone 18 Pro Max",
+    "storage": "256GB",
+    "color": "Glacier"
+  },
+  {
+    "part": "MJX64VC/A",
+    "model": "iPhone 18 Pro Max",
+    "storage": "256GB",
+    "color": "Silver"
   },
   {
     "part": "MJXJ4VC/A",
@@ -94,6 +154,12 @@
     "model": "iPhone 18 Pro Max",
     "storage": "2TB",
     "color": "Burgundy"
+  },
+  {
+    "part": "MJXM4VC/A",
+    "model": "iPhone 18 Pro Max",
+    "storage": "2TB",
+    "color": "Glacier"
   },
   {
     "part": "MJXK4VC/A",
@@ -112,6 +178,12 @@
     "model": "iPhone 18 Pro Max",
     "storage": "512GB",
     "color": "Burgundy"
+  },
+  {
+    "part": "MJXD4VC/A",
+    "model": "iPhone 18 Pro Max",
+    "storage": "512GB",
+    "color": "Glacier"
   },
   {
     "part": "MJXA4VC/A",
